@@ -1,0 +1,114 @@
+[
+  {
+    "drug_code": "MED001",
+    "drug_name": "Warfarin",
+    "therapeutic_class": "Vitamin K Antagonist / Anticoagulant",
+    "standard_dosage": "5mg",
+    "route": "Oral",
+    "indications": ["Atrial Fibrillation", "Deep Vein Thrombosis", "Pulmonary Embolism"]
+  },
+  {
+    "drug_code": "MED002",
+    "drug_name": "Aspirin",
+    "therapeutic_class": "Antiplatelet / NSAID",
+    "standard_dosage": "81mg",
+    "route": "Oral",
+    "indications": ["Secondary Prevention of Cardiovascular Disease", "Pain"]
+  },
+  {
+    "drug_code": "MED003",
+    "drug_name": "Ibuprofen",
+    "therapeutic_class": "Nonsteroidal Anti-inflammatory Drug (NSAID)",
+    "standard_dosage": "400mg",
+    "route": "Oral",
+    "indications": ["Pain", "Inflammation", "Osteoarthritis"]
+  },
+  {
+    "drug_code": "MED004",
+    "drug_name": "Metformin",
+    "therapeutic_class": "Biguanide / Antidiabetic",
+    "standard_dosage": "1000mg",
+    "route": "Oral",
+    "indications": ["Type 2 Diabetes Mellitus"]
+  },
+  {
+    "drug_code": "MED005",
+    "drug_name": "Simvastatin",
+    "therapeutic_class": "HMG-CoA Reductase Inhibitor / Statin",
+    "standard_dosage": "40mg",
+    "route": "Oral",
+    "indications": ["Hypercholesterolemia", "Cardiovascular Risk Reduction"]
+  },
+  {
+    "drug_code": "MED006",
+    "drug_name": "Clarithromycin",
+    "therapeutic_class": "Macrolide Antibiotic (CYP3A4 Inhibitor)",
+    "standard_dosage": "500mg",
+    "route": "Oral",
+    "indications": ["Bacterial Infections", "Bronchitis", "Pneumonia"]
+  },
+  {
+    "drug_code": "MED007",
+    "drug_name": "Lisinopril",
+    "therapeutic_class": "ACE Inhibitor / Antihypertensive",
+    "standard_dosage": "20mg",
+    "route": "Oral",
+    "indications": ["Hypertension", "Heart Failure", "Post-Myocardial Infarction"]
+  },
+  {
+    "drug_code": "MED008",
+    "drug_name": "Spironolactone",
+    "therapeutic_class": "Potassium-Sparing Diuretic / Aldosterone Antagonist",
+    "standard_dosage": "25mg",
+    "route": "Oral",
+    "indications": ["Heart Failure", "Resistant Hypertension", "Hypokalemia"]
+  },
+  {
+    "drug_code": "MED009",
+    "drug_name": "Atorvastatin",
+    "therapeutic_class": "HMG-CoA Reductase Inhibitor / Statin",
+    "standard_dosage": "20mg",
+    "route": "Oral",
+    "indications": ["Dyslipidemia", "Cardiovascular Risk Reduction"]
+  },
+  {
+    "drug_code": "MED010",
+    "drug_name": "Ciprofloxacin",
+    "therapeutic_class": "Fluoroquinolone Antibiotic (CYP1A2 Inhibitor)",
+    "standard_dosage": "500mg",
+    "route": "Oral",
+    "indications": ["Urinary Tract Infection", "Severe Bacterial Infections"]
+  },
+  {
+    "drug_code": "MED011",
+    "drug_name": "Theophylline",
+    "therapeutic_class": "Methylxanthine Bronchodilator",
+    "standard_dosage": "300mg",
+    "route": "Oral",
+    "indications": ["Asthma", "Chronic Obstructive Pulmonary Disease"]
+  },
+  {
+    "drug_code": "MED012",
+    "drug_name": "Levothyroxine",
+    "therapeutic_class": "Synthetic Thyroid Hormone",
+    "standard_dosage": "75mcg",
+    "route": "Oral",
+    "indications": ["Hypothyroidism"]
+  },
+  {
+    "drug_code": "MED013",
+    "drug_name": "Vitamin D3",
+    "therapeutic_class": "Dietary Supplement / Vitamin",
+    "standard_dosage": "2000IU",
+    "route": "Oral",
+    "indications": ["Vitamin D Deficiency", "Bone Health"]
+  },
+  {
+    "drug_code": "MED014",
+    "drug_name": "Amiodarone",
+    "therapeutic_class": "Class III Antiarrhythmic",
+    "standard_dosage": "200mg",
+    "route": "Oral",
+    "indications": ["Ventricular Arrhythmias", "Atrial Fibrillation"]
+  }
+]

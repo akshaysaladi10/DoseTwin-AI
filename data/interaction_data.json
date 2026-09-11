@@ -1,0 +1,66 @@
+[
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Aspirin",
+    "severity": "High",
+    "mechanism": "Pharmacodynamic synergism: Concurrent administration of an anticoagulant (Warfarin) and an antiplatelet agent (Aspirin) significantly impairs hemostasis.",
+    "description": "Marked increase in the risk of major gastrointestinal hemorrhage and intracranial bleeding.",
+    "recommendation": "Avoid concurrent use unless strictly indicated for high-risk cardiac events with vigilant INR monitoring and GI protection (PPI)."
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Ibuprofen",
+    "severity": "High",
+    "mechanism": "Pharmacodynamic antiplatelet effect and GI mucosal injury combined with competitive protein binding displacement.",
+    "description": "NSAIDs damage gastric mucosa and inhibit platelet aggregation, substantially multiplying Warfarin-induced bleeding risk.",
+    "recommendation": "Avoid NSAID combination. Use Acetaminophen for pain relief or an alternative analgesic under clinical supervision."
+  },
+  {
+    "drug_a": "Simvastatin",
+    "drug_b": "Clarithromycin",
+    "severity": "High",
+    "mechanism": "Pharmacokinetic enzyme inhibition: Clarithromycin is a potent CYP3A4 inhibitor that prevents hepatic metabolism of Simvastatin.",
+    "description": "Substantially increases serum Simvastatin concentrations (up to 10-fold), precipitating severe myopathy and life-threatening rhabdomyolysis.",
+    "recommendation": "Discontinue Simvastatin therapy temporarily during Clarithromycin course or switch to a non-CYP3A4 metabolized statin (e.g., Pravastatin, Rosuvastatin)."
+  },
+  {
+    "drug_a": "Lisinopril",
+    "drug_b": "Spironolactone",
+    "severity": "Moderate",
+    "mechanism": "Additive pharmacodynamic inhibition of aldosterone secretion and potassium excretion.",
+    "description": "Significantly elevated risk of severe hyperkalemia, particularly in patients with baseline renal impairment or elderly digital twins.",
+    "recommendation": "Monitor serum potassium and renal function (creatinine/eGFR) within 1-2 weeks of initiation and regularly thereafter."
+  },
+  {
+    "drug_a": "Ciprofloxacin",
+    "drug_b": "Theophylline",
+    "severity": "High",
+    "mechanism": "Hepatic CYP1A2 metabolic inhibition by Ciprofloxacin.",
+    "description": "Decreased Theophylline clearance leads to toxic serum levels, inducing severe nausea, tachyarrhythmias, and potential seizures.",
+    "recommendation": "Reduce Theophylline dosage by 30-50% and perform therapeutic drug monitoring if co-administration is strictly required."
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Amiodarone",
+    "severity": "High",
+    "mechanism": "Inhibition of CYP2C9 and CYP3A4 clearance of S- and R-warfarin enantiomers.",
+    "description": "Marked prolongation of prothrombin time / INR elevation and severe hemorrhagic complications.",
+    "recommendation": "Reduce Warfarin dose empirically by 33% to 50% upon initiating Amiodarone; monitor INR weekly."
+  },
+  {
+    "drug_a": "Metformin",
+    "drug_b": "Ciprofloxacin",
+    "severity": "Low",
+    "mechanism": "Potential alteration of glycemic control via OCT2/MATE transport modulation.",
+    "description": "Fluoroquinolones may cause dysglycemia (hypoglycemia or hyperglycemia) in diabetic patients on oral hypoglycemics.",
+    "recommendation": "Advise patient to increase frequency of self-monitoring of blood glucose levels during antibiotic therapy."
+  },
+  {
+    "drug_a": "Atorvastatin",
+    "drug_b": "Clarithromycin",
+    "severity": "Moderate",
+    "mechanism": "CYP3A4 inhibition increasing Atorvastatin exposure.",
+    "description": "Moderate increase in systemic statin exposure, elevating potential for muscle tenderness or transaminase elevation.",
+    "recommendation": "Limit Atorvastatin dose to maximum 20mg daily during Clarithromycin therapy and monitor for muscle symptoms."
+  }
+]

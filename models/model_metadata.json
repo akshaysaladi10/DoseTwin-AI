@@ -1,0 +1,31 @@
+{
+  "model_type": "TensorFlow Neural Network (Sequential)",
+  "accuracy": 0.6075,
+  "classes": [
+    "Poor",
+    "Moderate",
+    "Favorable"
+  ],
+  "features": {
+    "categorical": [
+      "gender",
+      "condition",
+      "drug",
+      "dosage"
+    ],
+    "numerical": [
+      "age",
+      "systolic_bp",
+      "diastolic_bp",
+      "heart_rate",
+      "blood_glucose",
+      "creatinine",
+      "alt_liver"
+    ]
+  },
+  "training_samples": 4000,
+  "metrics": {
+    "loss": 0.7493
+  },
+  "disclaimer": "Academic synthetic demonstration model using TensorFlow. Not for clinical diagnostic use."
+}

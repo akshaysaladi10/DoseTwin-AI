@@ -1,0 +1,152 @@
+[
+  {
+    "patient_code": "P001",
+    "name": "Eleanor Vance",
+    "age": 68,
+    "gender": "Female",
+    "primary_condition": "Atrial Fibrillation",
+    "observations": {
+      "systolic_bp": 138,
+      "diastolic_bp": 85,
+      "heart_rate": 78,
+      "blood_glucose": 105,
+      "creatinine": 1.4,
+      "alt_liver": 28
+    },
+    "medications": [
+      {
+        "drug_name": "Warfarin",
+        "dosage": "5mg",
+        "frequency": "Once daily",
+        "route": "Oral"
+      },
+      {
+        "drug_name": "Aspirin",
+        "dosage": "81mg",
+        "frequency": "Once daily",
+        "route": "Oral"
+      }
+    ],
+    "notes": "Synthetic patient demonstrating high-risk anticoagulant and antiplatelet interaction (increased major bleeding risk)."
+  },
+  {
+    "patient_code": "P002",
+    "name": "Arthur Pendelton",
+    "age": 54,
+    "gender": "Male",
+    "primary_condition": "Type 2 Diabetes Mellitus",
+    "observations": {
+      "systolic_bp": 126,
+      "diastolic_bp": 80,
+      "heart_rate": 72,
+      "blood_glucose": 162,
+      "creatinine": 0.9,
+      "alt_liver": 22
+    },
+    "medications": [
+      {
+        "drug_name": "Metformin",
+        "dosage": "1000mg",
+        "frequency": "Twice daily",
+        "route": "Oral"
+      },
+      {
+        "drug_name": "Atorvastatin",
+        "dosage": "20mg",
+        "frequency": "Once daily at bedtime",
+        "route": "Oral"
+      }
+    ],
+    "notes": "Synthetic patient with stable diabetic management and no adverse drug-drug conflicts."
+  },
+  {
+    "patient_code": "P003",
+    "name": "Clara Oswald",
+    "age": 62,
+    "gender": "Female",
+    "primary_condition": "Hypercholesterolemia & Acute Bronchitis",
+    "observations": {
+      "systolic_bp": 130,
+      "diastolic_bp": 82,
+      "heart_rate": 84,
+      "blood_glucose": 98,
+      "creatinine": 1.1,
+      "alt_liver": 45
+    },
+    "medications": [
+      {
+        "drug_name": "Simvastatin",
+        "dosage": "40mg",
+        "frequency": "Once daily at bedtime",
+        "route": "Oral"
+      },
+      {
+        "drug_name": "Clarithromycin",
+        "dosage": "500mg",
+        "frequency": "Twice daily",
+        "route": "Oral"
+      }
+    ],
+    "notes": "Synthetic patient demonstrating CYP3A4 inhibition conflict leading to elevated statin levels and rhabdomyolysis risk."
+  },
+  {
+    "patient_code": "P004",
+    "name": "Marcus Brody",
+    "age": 71,
+    "gender": "Male",
+    "primary_condition": "Congestive Heart Failure",
+    "observations": {
+      "systolic_bp": 142,
+      "diastolic_bp": 88,
+      "heart_rate": 66,
+      "blood_glucose": 110,
+      "creatinine": 1.8,
+      "alt_liver": 31
+    },
+    "medications": [
+      {
+        "drug_name": "Lisinopril",
+        "dosage": "20mg",
+        "frequency": "Once daily",
+        "route": "Oral"
+      },
+      {
+        "drug_name": "Spironolactone",
+        "dosage": "25mg",
+        "frequency": "Once daily",
+        "route": "Oral"
+      }
+    ],
+    "notes": "Synthetic patient demonstrating synergistic potassium retention and severe hyperkalemia risk in compromised renal clearance."
+  },
+  {
+    "patient_code": "P005",
+    "name": "Sophia Zhang",
+    "age": 42,
+    "gender": "Female",
+    "primary_condition": "Hypothyroidism",
+    "observations": {
+      "systolic_bp": 118,
+      "diastolic_bp": 76,
+      "heart_rate": 68,
+      "blood_glucose": 92,
+      "creatinine": 0.8,
+      "alt_liver": 18
+    },
+    "medications": [
+      {
+        "drug_name": "Levothyroxine",
+        "dosage": "75mcg",
+        "frequency": "Once daily in the morning",
+        "route": "Oral"
+      },
+      {
+        "drug_name": "Vitamin D3",
+        "dosage": "2000IU",
+        "frequency": "Once daily",
+        "route": "Oral"
+      }
+    ],
+    "notes": "Synthetic patient with safe, favorable synthetic drug response profile."
+  }
+]

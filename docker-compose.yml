@@ -1,0 +1,95 @@
+
+services:
+  # PostgreSQL Database Service
+  postgres:
+    image: postgres:15-alpine
+    container_name: dosetwin-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-dosetwin_db}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-dosetwin_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - dosetwin-network
+
+  # Neo4j Knowledge Graph Service
+  neo4j:
+    image: neo4j:5.14.0
+    container_name: dosetwin-neo4j
+    restart: unless-stopped
+    environment:
+      NEO4J_AUTH: neo4j/dosetwin_neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j_data:/data
+    healthcheck:
+      test: ["CMD", "cypher-shell", "-u", "neo4j", "-p", "dosetwin_neo4j", "RETURN 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+    networks:
+      - dosetwin-network
+
+  # FastAPI Backend Service (API Gateway & Core Microservices)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: dosetwin-backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-dosetwin_db}
+      NEO4J_URI: bolt://neo4j:7687
+      NEO4J_USER: neo4j
+      NEO4J_PASSWORD: dosetwin_neo4j
+      PROJECT_NAME: "DoseTwin AI"
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      neo4j:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/../data
+      - ./models:/app/../models
+    networks:
+      - dosetwin-network
+
+  # React + Vite Frontend Dashboard
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: dosetwin-frontend
+    restart: unless-stopped
+    environment:
+      VITE_API_URL: http://localhost:8000
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    networks:
+      - dosetwin-network
+
+volumes:
+  postgres_data:
+    driver: local
+  neo4j_data:
+    driver: local
+
+networks:
+  dosetwin-network:
+    driver: bridge
